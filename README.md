@@ -4,7 +4,7 @@ A cheat revealing library for CS:GO
 Available cheats: Neverlose, Gamesense, Primordial, Fatality, Onetap, Pandora, Nixware, Evolve, Spirthack
 
 ## Information
-In the end of 2022 esoterik (gamesense developer) decided to go full-schizo mode and encrypt shared esp packets with his own techniques because he didn't like the fact that my cheat revealer existed. AFAIK in the recent updates he even decided virtualize some parts of the sharedesp code to make it harder to reverse-engineer.
+In the end of 2022 esoterik (gamesense developer) decided to go full-schizo mode and encrypt shared esp packets with his own techniques because he didn't like the fact that my cheat revealer existed. AFAIK in the recent updates he even decided to virtualize some parts of the sharedesp code to make it harder to reverse-engineer.
 
 [This part of the code (L198)](https://github.com/tickcount/voice-listener.lua/blob/ee363896627ddc64a367488edf50d823255d9ca3/voice-listener.lua#L198) basically executes the shellcode (reversed part of the shared esp decryption from gamesense) and returns true if it matches the gamesense shared esp packet. I didn't have much time to port it to lua so i just left it the way it is, feel free to reverse it.
 
